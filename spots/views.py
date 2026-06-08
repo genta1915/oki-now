@@ -5,19 +5,25 @@ def home(request):
     return render(request, "spots/home.html")
 
 
+def time(request):
+    spot_type = request.GET.get("type")
+    return render(request, "spots/time.html", {"spot_type": spot_type})
+
+
 def result(request):
     spot_type = request.GET.get("type")
+    play_time = request.GET.get("time")
 
-    if spot_type == "friend":
+    if spot_type == "friend" and play_time == "night":
         spot = "美浜アメリカンビレッジ"
 
-    elif spot_type == "couple":
+    elif spot_type == "couple" and play_time == "night":
         spot = "古宇利島"
 
-    elif spot_type == "family":
+    elif spot_type == "family" and play_time == "day":
         spot = "沖縄こどもの国"
 
-    elif spot_type == "solo":
+    elif spot_type == "solo" and play_time == "day":
         spot = "首里城"
 
     else:
