@@ -10,6 +10,20 @@ def time(request):
     return render(request, "spots/time.html", {"spot_type": spot_type})
 
 
+def budget(request):
+    spot_type = request.GET.get("type")
+    play_time = request.GET.get("time")
+
+    return render(
+        request,
+        "spots/budget.html",
+        {
+            "spot_type": spot_type,
+            "play_time": play_time,
+        },
+    )
+
+
 def result(request):
     spot_type = request.GET.get("type")
     play_time = request.GET.get("time")
