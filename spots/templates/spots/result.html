@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -10,6 +12,8 @@
     <h1>おすすめスポット</h1>
 
     <p>{{ spot }}</p>
+
+    <img src="{% static image %}" alt="{{ spot }}" width="400">
 
     <a href="/">ホームへ戻る</a>
 </body>

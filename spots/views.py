@@ -30,17 +30,29 @@ def result(request):
 
     if spot_type == "friend" and play_time == "night":
         spot = "美浜アメリカンビレッジ"
+        image = "spots/images/mihama2.jpg"
 
     elif spot_type == "couple" and play_time == "night":
-        spot = "古宇利島"
+        spot = "瀬長島ウミカジテラス"
+        image = "spots/images/umikazi.jpg"
 
     elif spot_type == "family" and play_time == "day":
         spot = "沖縄こどもの国"
+        image = "spots/images/kodomo.jpg"
 
     elif spot_type == "solo" and play_time == "day":
         spot = "首里城"
+        image = "spots/images/shuri.jpg"
 
     else:
         spot = "国際通り"
+        image = "spots/images/kokusai.jpg"
 
-    return render(request, "spots/result.html", {"spot": spot})
+    return render(
+        request,
+        "spots/result.html",
+        {
+            "spot": spot,
+            "image": image,
+        },
+    )
