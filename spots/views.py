@@ -44,43 +44,82 @@ def result(request):
     play_time = request.GET.get("time")
     mood = request.GET.get("mood")
 
-    if mood == "drive":
-        spot = "海中道路"
-        image = "spots/images/kaityuu.jpg"
+    if mood == "relax":
+        spots = [
+            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+        ]
+
+    elif mood == "drive":
+        spots = [
+            {"name": "海中道路", "image": "spots/images/kaityuu.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+        ]
 
     elif mood == "food":
-        spot = "国際通りグルメ"
-        image = "spots/images/kokusaigurume.jpg"
+        spots = [
+            {"name": "国際通りグルメ", "image": "spots/images/kokusaigurume.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+            },
+        ]
 
     elif mood == "photo":
-        spot = "アメリカンビレッジ"
-        image = "spots/images/amerikan.jpg"
+        spots = [
+            {"name": "アメリカンビレッジ", "image": "spots/images/amerikan.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
+        ]
+
+    elif mood == "active":
+        spots = [
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+        ]
 
     elif spot_type == "friend" and play_time == "night":
-        spot = "美浜アメリカンビレッジ"
-        image = "spots/images/mihama2.jpg"
+        spots = [
+            {"name": "国際通り", "image": "spots/imaes/kokusai2.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+        ]
 
     elif spot_type == "couple" and play_time == "night":
-        spot = "瀬長島ウミカジテラス"
-        image = "spots/images/umikazi.jpg"
+        spots = [
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+        ]
 
     elif spot_type == "family" and play_time == "day":
-        spot = "沖縄こどもの国"
-        image = "spots/images/kodomo.jpg"
+        spots = [
+            {"name": "沖縄こどもの国", "image": "spots/images/kodomo.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+        ]
 
     elif spot_type == "solo" and play_time == "day":
-        spot = "首里城"
-        image = "spots/images/shuri.jpg"
+        spots = [
+            {"name": "首里城", "image": "spots/images/syuri.jpg"},
+            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama.jpg"},
+        ]
 
     else:
-        spot = "国際通り"
-        image = "spots/images/kokusai.jpg"
-
+        spots = [
+            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
+            {"name": "美浜アメリカンビレッジ", "image": "spots*images/mihama2.jpg"},
+            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+        ]
     return render(
         request,
         "spots/result.html",
         {
-            "spot": spot,
-            "image": image,
+            "spots": spots,
         },
     )

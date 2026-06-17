@@ -11,9 +11,10 @@
 <body>
     <h1>おすすめスポット</h1>
 
-    <p>{{ spot }}</p>
-
-    <img src="{% static image %}" alt="{{ spot }}" width="400">
+    {% for spot in spots %}
+    <h2>{{ spot.name }}</h2>
+    <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
+    {% endfor %}
 
     <a href="/">ホームへ戻る</a>
 </body>
