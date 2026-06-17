@@ -26,6 +26,7 @@ def time(request):
 def budget(request):
     spot_type = request.GET.get("type")
     play_time = request.GET.get("time")
+    mood = request.GET.get("mood")
 
     return render(
         request,
@@ -33,6 +34,7 @@ def budget(request):
         {
             "spot_type": spot_type,
             "play_time": play_time,
+            "mood": mood,
         },
     )
 
@@ -40,8 +42,21 @@ def budget(request):
 def result(request):
     spot_type = request.GET.get("type")
     play_time = request.GET.get("time")
+    mood = request.GET.get("mood")
 
-    if spot_type == "friend" and play_time == "night":
+    if mood == "drive":
+        spot = "海中道路"
+        image = "spots/images/kaityuu.jpg"
+
+    elif mood == "food":
+        spot = "国際通りグルメ"
+        image = "spots/images/kokusaigurume.jpg"
+
+    elif mood == "photo":
+        spot = "アメリカンビレッジ"
+        image = "spots/images/amerikan.jpg"
+
+    elif spot_type == "friend" and play_time == "night":
         spot = "美浜アメリカンビレッジ"
         image = "spots/images/mihama2.jpg"
 
