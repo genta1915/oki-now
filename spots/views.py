@@ -5,9 +5,22 @@ def home(request):
     return render(request, "spots/home.html")
 
 
+def mood(request):
+    spot_type = request.GET.get("type")
+    return render(request, "spots/mood.html", {"spot_type": spot_type})
+
+
 def time(request):
     spot_type = request.GET.get("type")
-    return render(request, "spots/time.html", {"spot_type": spot_type})
+    mood = request.GET.get("mood")
+    return render(
+        request,
+        "spots/time.html",
+        {
+            "spot_type": spot_type,
+            "mood": mood,
+        },
+    )
 
 
 def budget(request):
