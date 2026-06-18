@@ -14,6 +14,14 @@
     {% for spot in spots %}
     <h2>{{ spot.name }}</h2>
     <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
+
+    <br>
+
+    <a href="{{ spot.map_url }}" target="_blank">
+        Googleマップで見る
+    </a>
+
+    <br><br>
     {% endfor %}
 
     <a href="/">ホームへ戻る</a>

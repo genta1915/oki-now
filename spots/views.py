@@ -46,7 +46,11 @@ def result(request):
 
     if mood == "relax":
         spots = [
-            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai2.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
             {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
             {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
         ]
