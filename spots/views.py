@@ -224,7 +224,7 @@ def result(request):
             },
             {
                 "name": "美浜アメリカンビレッジ",
-                "image": "spots*images/mihama2.jpg",
+                "image": "spots/images/mihama2.jpg",
                 "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
             },
             {
