@@ -51,74 +51,187 @@ def result(request):
                 "image": "spots/images/kokusai2.jpg",
                 "map_url": "https://maps.google.com/?q=国際通り",
             },
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
         ]
 
     elif mood == "drive":
         spots = [
-            {"name": "海中道路", "image": "spots/images/kaityuu.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
+            {
+                "name": "海中道路",
+                "image": "spots/images/kaityuu.jpg",
+                "map_url": "https://maps.google.com/?q=海中道路",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
         ]
 
     elif mood == "food":
         spots = [
-            {"name": "国際通りグルメ", "image": "spots/images/kokusaigurume.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "国際通りグルメ",
+                "image": "spots/images/kokusaigurume.jpg",
+                "map_url": "https://maps.google.com/?q=国際通りグルメ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
             {
                 "name": "美浜アメリカンビレッジ",
                 "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
             },
         ]
 
     elif mood == "photo":
         spots = [
-            {"name": "アメリカンビレッジ", "image": "spots/images/amerikan.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
-            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
+            {
+                "name": "アメリカンビレッジ",
+                "image": "spots/images/amerikan.jpg",
+                "map_url": "https://maps.google.com/?q=アメリカンビレッジ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
         ]
 
     elif mood == "active":
         spots = [
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
-            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai2.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
         ]
 
     elif spot_type == "friend" and play_time == "night":
         spots = [
-            {"name": "国際通り", "image": "spots/imaes/kokusai2.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "国際通り",
+                "image": "spots/imaes/kokusai2.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
         ]
 
     elif spot_type == "couple" and play_time == "night":
         spots = [
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama2.jpg"},
-            {"name": "国際通り", "image": "spots/images/kokusai2.jpg"},
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai2.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
         ]
 
     elif spot_type == "family" and play_time == "day":
         spots = [
-            {"name": "沖縄こどもの国", "image": "spots/images/kodomo.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "沖縄こどもの国",
+                "image": "spots/images/kodomo.jpg",
+                "map_url": "https://maps.google.com/?q=沖縄こどもの国",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
         ]
 
     elif spot_type == "solo" and play_time == "day":
         spots = [
-            {"name": "首里城", "image": "spots/images/syuri.jpg"},
-            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots/images/mihama.jpg"},
+            {
+                "name": "首里城",
+                "image": "spots/images/syuri.jpg",
+                "map_url": "https://maps.google.com/?q=首里城",
+            },
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots/images/mihama.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
         ]
 
     else:
         spots = [
-            {"name": "国際通り", "image": "spots/images/kokusai.jpg"},
-            {"name": "美浜アメリカンビレッジ", "image": "spots*images/mihama2.jpg"},
-            {"name": "瀬長島ウミカジテラス", "image": "spots/images/umikazi.jpg"},
+            {
+                "name": "国際通り",
+                "image": "spots/images/kokusai.jpg",
+                "map_url": "https://maps.google.com/?q=国際通り",
+            },
+            {
+                "name": "美浜アメリカンビレッジ",
+                "image": "spots*images/mihama2.jpg",
+                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+            },
+            {
+                "name": "瀬長島ウミカジテラス",
+                "image": "spots/images/umikazi.jpg",
+                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+            },
         ]
     return render(
         request,
