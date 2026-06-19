@@ -6,6 +6,23 @@
 <head>
     <meta charset="UTF-8">
     <title>おすすめスポット</title>
+
+    <style>
+        .map-button {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .map-button:hover {
+            background-color: #27ae60;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,8 +37,8 @@
 
     <br>
 
-    <a href="{{ spot.map_url }}" target="_blank">
-        Googleマップで見る
+    <a href="{{ spot.map_url }}" target="_blank" class="map-button">
+        📍 Googleマップで見る
     </a>
 
     <br><br>
