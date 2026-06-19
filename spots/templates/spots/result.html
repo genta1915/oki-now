@@ -46,6 +46,14 @@
             margin-bottom: 30px;
 
         }
+
+        .reason {
+            background-color: #fff8dc;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: bold;
+            border-left: 5px solid #f1c40f;
+        }
     </style>
 </head>
 
@@ -58,6 +66,8 @@
         <h2>{{ spot.name }}</h2>
 
         <p>{{ spot.description }}</p>
+
+        <p class="reason">⭐ おすすめ理由: {{ spot.reason }}</p>
 
         <img src="{% static spot.image %}" alt="{{ spot.name }}" width="600">
 
