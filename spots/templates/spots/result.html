@@ -8,6 +8,10 @@
     <title>おすすめスポット</title>
 
     <style>
+        h1 {
+            text-align: center;
+        }
+
         body {
             background-color: #dff4ff;
         }
@@ -33,6 +37,8 @@
         }
 
         .spot-card {
+            max-width: 850px;
+            margin: 0 auto 30px auto;
             background: white;
             padding: 20px;
             border-radius: 20px;
@@ -53,7 +59,7 @@
 
         <p>{{ spot.description }}</p>
 
-        <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
+        <img src="{% static spot.image %}" alt="{{ spot.name }}" width="600">
 
         <br>
 
