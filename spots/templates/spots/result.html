@@ -13,6 +13,9 @@
 
     {% for spot in spots %}
     <h2>{{ spot.name }}</h2>
+
+    <p>{{ spot.description }}</p>
+
     <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
 
     <br>

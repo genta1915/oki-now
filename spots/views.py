@@ -50,16 +50,19 @@ def result(request):
                 "name": "国際通り",
                 "image": "spots/images/kokusai2.jpg",
                 "map_url": "https://maps.google.com/?q=国際通り",
+                "description": "沖縄最大の繁華街！  食べ歩きやショッピングを楽しめます。",
             },
             {
                 "name": "美浜アメリカンビレッジ",
                 "image": "spots/images/mihama2.jpg",
                 "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
+                "description": "アメリカ西海岸の街並みが楽しめる人気観光スポットです。",
             },
             {
                 "name": "瀬長島ウミカジテラス",
                 "image": "spots/images/umikazi.jpg",
                 "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+                "description": "海を眺めながらカフェや、ショッピングを楽しめる絶景スポットです！",
             },
         ]
 
