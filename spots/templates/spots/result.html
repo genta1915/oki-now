@@ -22,6 +22,20 @@
         .map-button:hover {
             background-color: #27ae60;
         }
+
+        img {
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .spot-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+
+        }
     </style>
 </head>
 
@@ -29,19 +43,21 @@
     <h1>おすすめスポット</h1>
 
     {% for spot in spots %}
-    <h2>{{ spot.name }}</h2>
+    <div class="spot-card">
 
-    <p>{{ spot.description }}</p>
+        <h2>{{ spot.name }}</h2>
 
-    <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
+        <p>{{ spot.description }}</p>
 
-    <br>
+        <img src="{% static spot.image %}" alt="{{ spot.name }}" width="400">
 
-    <a href="{{ spot.map_url }}" target="_blank" class="map-button">
-        📍 Googleマップで見る
-    </a>
+        <br>
 
-    <br><br>
+        <a href="{{ spot.map_url }}" target="_blank" class="map-button">
+            📍 Googleマップで見る
+        </a>
+
+    </div>
     {% endfor %}
 
     <a href="/">ホームへ戻る</a>
