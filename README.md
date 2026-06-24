@@ -8,7 +8,7 @@
 
 ## GitHub
 
-https://github.com/genta1915/oki-now
+🚀 https://github.com/genta1915/oki-now
 
 ## 概要
 
