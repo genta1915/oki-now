@@ -4,7 +4,7 @@
 
 ## 公開URL
 
-- GitHub: https//github.com/genta1915/oki-now
+- GitHub: https://github.com/genta1915/oki-now
 - デモサイト: ※現在開発中
 
 ## 概要
