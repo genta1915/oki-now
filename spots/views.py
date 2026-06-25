@@ -97,18 +97,18 @@ def result(request):
     elif mood == "food":
         spots = [
             {
-                "name": "国際通りグルメ",
-                "image": "spots/images/kokusaigurume.jpg",
-                "map_url": "https://maps.google.com/?q=国際通りグルメ",
-                "description": "",
-                "reason": "",
+                "name": "エスティネート ラウンジ 那覇",
+                "image": "spots/images/raunzi.jpg",
+                "map_url": "https://maps.google.com/?q=エスティネート ラウンジ 那覇",
+                "description": "沖縄の食材を使った「琉球メキシカン」かコンセプトのカフェ&レストランです。",
+                "reason": "おしゃれな雰囲気で会話を楽しみながら、美味しい沖縄グルメを味わえるデートにもピッタリ！",
             },
             {
-                "name": "瀬長島ウミカジテラス",
-                "image": "spots/images/umikazi.jpg",
-                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
-                "description": "",
-                "reason": "",
+                "name": "カフェ サンフランシスコ",
+                "image": "spots/images/sanfuransisuko.jpg",
+                "map_url": "https://maps.google.com/?q=カフェサンフランシスコ",
+                "description": "北カルフォルニアの雰囲気とオーシャンビューの絶景を楽しめる人気のカフェ&バーです。",
+                "reason": "ビル最上階のテラス席から、アメリカンビレッジと沖縄の海を一望できます！",
             },
             {
                 "name": "美浜アメリカンビレッジ",
