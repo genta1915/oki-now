@@ -79,11 +79,11 @@ def result(request):
                 "reason": "綺麗な海を眺めながら、海の上を走れて爽快感を感じられます！",
             },
             {
-                "name": "果報バンタ",
-                "image": "spots/images/kafuubannta.jpg",
-                "map_url": "https://maps.google.com/?q=果報バンタ",
-                "description": "断崖絶壁の上から広がる絶景を楽しめて、青く輝く海と空を一望でき知る人ぞ知る沖縄屈指のビュースポットです。",
-                "reason": "ドライブの途中に立ち寄るだけで、思わず見とれてしまう沖縄ならではの開放感を味わえます！",
+                "name": "知念岬公園",
+                "image": "spots/images/tinen.jpg",
+                "map_url": "https://maps.google.com/?q=知念岬公園",
+                "description": "海風を感じながら、のんびり散歩や絶景を楽しめます。",
+                "reason": "開放感あふれる景色で気分もリフレッシュ！ドライブの途中に立ち寄るのにもピッタリです。",
             },
             {
                 "name": "古宇利大橋",
@@ -111,45 +111,45 @@ def result(request):
                 "reason": "ビル最上階のテラス席から、アメリカンビレッジと沖縄の海を一望できます！",
             },
             {
-                "name": "美浜アメリカンビレッジ",
-                "image": "spots/images/mihama2.jpg",
-                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
-                "description": "",
-                "reason": "",
+                "name": "トランジット カフェ",
+                "image": "spots/images/toranziltuto.jpg",
+                "map_url": "https://maps.google.com/?q=トランジット カフェ",
+                "description": "店内やテラス席からは、時間の移り変わりとともに変化する美しい海と空を眺めながら食事を楽しめます。",
+                "reason": "海風を感じられるテラス席は、リゾート気分を味わえる人気スポットです！",
             },
         ]
 
     elif mood == "photo":
         spots = [
             {
-                "name": "アメリカンビレッジ",
-                "image": "spots/images/amerikan.jpg",
-                "map_url": "https://maps.google.com/?q=アメリカンビレッジ",
-                "description": "",
-                "reason": "",
+                "name": "果報バンタ",
+                "image": "spots/images/kafuubanta.jpg",
+                "map_url": "https://maps.google.com/?q=果報バンタ",
+                "description": "断崖絶壁の上から広がる絶景を楽しめて、青く輝く海と空を一望でき知る人ぞ知る沖縄屈指のビュースポットです。",
+                "reason": "どこを切り取っても写真映え抜群！思い出に残る一枚を取りたい人にピッタリです。",
             },
             {
-                "name": "瀬長島ウミカジテラス",
-                "image": "spots/images/umikazi.jpg",
-                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
-                "description": "",
-                "reson": "",
+                "name": "伊計島",
+                "image": "spots/images/ikei.jpg",
+                "map_url": "https://maps.google.com/?q=伊計島",
+                "description": "透明度抜群の海と自然に囲まれた、癒しの絶景スポット。のんびり過ごしたい日に最適です！",
+                "reason": "海をバックに写真を撮れば映えること間違えなし！ドライブにもおすすめです。",
             },
             {
-                "name": "国際通り",
-                "image": "spots/images/kokusai.jpg",
-                "map_url": "https://maps.google.com/?q=国際通り",
-                "description": "",
-                "reason": "",
+                "name": "浜辺の茶屋",
+                "image": "spots/images/hamabe.jpg",
+                "map_url": "https://maps.google.com/?q=浜辺の茶屋",
+                "description": "海のすぐそばでゆっくり過ごせる人気カフェ。窓から見える青い海が、写真映えする癒し空間です。",
+                "reason": "海を眺めながらカフェ時間を楽しめるのが魅力！沖縄らしい景色を満喫できます。",
             },
         ]
 
     elif mood == "active":
         spots = [
             {
-                "name": "瀬長島ウミカジテラス",
-                "image": "spots/images/umikazi.jpg",
-                "map_url": "https://maps.google.com/?q=瀬長島ウミカジテラス",
+                "name": "知念岬公園",
+                "image": "spots/images/tinen.jpg",
+                "map_url": "https://maps.google.com/?q=知念岬公園",
                 "description": "",
                 "reason": "",
             },
