@@ -147,25 +147,25 @@ def result(request):
     elif mood == "active":
         spots = [
             {
-                "name": "知念岬公園",
-                "image": "spots/images/tinen.jpg",
-                "map_url": "https://maps.google.com/?q=知念岬公園",
-                "description": "",
-                "reason": "",
+                "name": "チームラボ学ぶ！未来の遊園地 沖縄",
+                "image": "spots/images/rabo2.jpg",
+                "map_url": "https://maps.google.com/?q=チームラボ学ぶ！未来の遊園地 沖縄",
+                "description": "光と映像が広がる幻想的な空間で、体を動かしながら楽しめる体験型スポット。",
+                "reason": "作品に触れて遊べる不思議な世界は、思わず夢中に！写真映えも抜群。",
             },
             {
-                "name": "美浜アメリカンビレッジ",
-                "image": "spots/images/mihama2.jpg",
-                "map_url": "https://maps.google.com/?q=美浜アメリカンビレッジ",
-                "description": "",
-                "reason": "",
+                "name": "ケイブ オキナワ",
+                "image": "spots/images/keibu.jpg",
+                "map_url": "https://maps.google.com/?q=ケイブ オキナワ",
+                "description": "足を踏み入れた瞬間から幻想的な世界が広がる、沖縄屈指の鍾乳洞スポット。",
+                "reason": "まるで別世界に迷い込んだような空間で、ワクワクする探検気分を味わえる！",
             },
             {
-                "name": "国際通り",
-                "image": "spots/images/kokusai2.jpg",
-                "map_url": "https://maps.google.com/?q=国際通り",
-                "description": "",
-                "reason": "",
+                "name": "東南植物楽園",
+                "image": "spots/images/tounan.jpg",
+                "map_url": "https://maps.google.com/?q=東南植物楽園",
+                "description": "南国ならではの植物や美しい景色が広がる、自然を満喫できる人気スポットです。",
+                "reason": "昼は自然に癒され、夜は幻想的なイルミネーションで特別な時間を楽しめる！",
             },
         ]
 
